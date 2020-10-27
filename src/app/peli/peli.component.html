@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peli</title>
+    <link rel="stylesheet" href="peli.component.css">
+</head>
+<body>
+    <div *ngIf="title == 'Pulp fiction'">
+        <span>
+            <h1>Pulp Fiction</h1>
+            <div *ngFor="let peli of pelis" class="pelis">
+                <div *ngIf="peli.titol == title">
+                    <span><p><strong>Género:</strong> {{peli.genere}}</p><p><strong>Año de estreno:</strong> {{peli.estrena}}</p><p><strong>Actor principal:</strong><a routerLink="/actor/{{peli.actors}}"> {{peli.actors}}</a></p>
+                        <p><strong>Sinopsis:</strong> {{peli.sinopsis}}</p><p><strong>Director:</strong>{{peli.director}}</p></span>    
+                </div>  
+            </div>
+            <img [src]="'assets/img/pulp_fiction.jpg'">
+        </span>
+    </div>
+    <div *ngIf="title == 'El padrino'">
+        <span>
+            <h1>El padrino</h1>
+            <div *ngFor="let peli of pelis" class="pelis">
+                <div *ngIf="peli.titol == title">
+                    <span><p><strong>Género:</strong> {{peli.genere}}</p><p><strong>Año de estreno:</strong> {{peli.estrena}}</p><p><strong>Actor principal:</strong><a routerLink="/actor/{{peli.actors}}"> {{peli.actors}}</a></p>
+                        <p><strong>Sinopsis:</strong> {{peli.sinopsis}}</p><p><strong>Director:</strong>{{peli.director}}</p></span>    
+                </div>  
+            </div>
+            <img [src]="'assets/img/padrino.jpg'">
+        </span>
+    </div>
+    <div *ngIf="title == 'La vida es bella'">
+        <span>
+            <h1>La vida es bella</h1>
+            <div *ngFor="let peli of pelis" class="pelis">
+                <div *ngIf="peli.titol == title">
+                    <span><p><strong>Género:</strong> {{peli.genere}}</p><p><strong>Año de estreno:</strong> {{peli.estrena}}</p><p><strong>Actor principal:</strong><a routerLink="/actor/{{peli.actors}}"> {{peli.actors}}</a></p>
+                        <p><strong>Sinopsis:</strong> {{peli.sinopsis}}</p><p><strong>Director:</strong>{{peli.director}}</p></span>    
+                </div>  
+            </div>
+            <img [src]="'assets/img/vidabella.jpg'">
+        </span>
+    </div>
+    <div *ngIf="title == 'El club de la lucha'">
+        <span>
+            <h1>El club de la lucha</h1>
+            <div *ngFor="let peli of pelis" class="pelis">
+                <div *ngIf="peli.titol == title">
+                    <span><p><strong>Género:</strong> {{peli.genere}}</p><p><strong>Año de estreno:</strong> {{peli.estrena}}</p><p><strong>Actor principal:</strong><a routerLink="/actor/{{peli.actors}}"> {{peli.actors}}</a></p>
+                        <p><strong>Sinopsis:</strong> {{peli.sinopsis}}</p><p><strong>Director:</strong>{{peli.director}}</p></span>    
+                </div>  
+            </div>
+            <img [src]="'assets/img/clublucha.jpg'">
+        </span>
+    </div>
+</body>
+</html>

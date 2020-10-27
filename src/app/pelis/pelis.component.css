@@ -1,0 +1,56 @@
+.pelis {
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+    padding-top: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    margin-top: -30px;
+}
+
+.pelis p {
+    padding: 10px;
+}
+
+#llistat {
+    display: inline-block;
+    width: 25%;
+}
+
+#titol {
+    font-size: 20px;
+}
+
+.p {
+    padding: 10px;
+}
+
+#pulp_fiction {
+    width: 20%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#padrino {
+    width: 20%;
+    height: 560px;
+    margin-left: 80px;
+}
+
+#vidabella {
+    width: 20%;
+    height: 560px;
+    margin-left: 110px;
+}
+
+#clublucha {
+    width: 20%;
+    height: 560px;
+    margin-left: 90px;
+}
+
+
+

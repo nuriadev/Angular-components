@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="actor.component.css">
+</head>
+<body>
+    <div *ngIf="name == 'John Travolta'">
+        <span>
+            <h1>John Travolta</h1>
+            <div *ngFor="let actor of actors">
+                <div *ngIf="actor.name == name">
+                    <span><p><strong>Nombre: </strong>{{actor.name}}</p><p><strong>Fecha de nacimiento:</strong> {{actor.birth}}</p><p><strong>Películas:</strong> {{actor.pelis}}</p></span>
+                </div>
+            </div>
+            <img [src]="'assets/img/travolta.jpg'">
+        </span>
+    </div>
+    <div *ngIf="name == 'Marlon Brando'">
+        <span>
+            <h1>Marlon Brando</h1>
+            <div *ngFor="let actor of actors">
+                <div *ngIf="actor.name == name">
+                    <span><p><strong>Nombre: </strong>{{actor.name}}</p><p><strong>Fecha de nacimiento:</strong> {{actor.birth}}</p><p><strong>Películas:</strong> {{actor.pelis}}</p></span>
+                </div>
+            </div>
+            <img [src]="'assets/img/brando.jpg'">
+        </span>
+    </div>
+    <div *ngIf="name == 'Roberto Benigni'">
+        <span>
+            <h1>Roberto Benigni</h1>
+            <div *ngFor="let actor of actors">
+                <div *ngIf="actor.name == name">
+                    <span><p><strong>Nombre: </strong>{{actor.name}}</p><p><strong>Fecha de nacimiento:</strong> {{actor.birth}}</p><p><strong>Películas:</strong> {{actor.pelis}}</p></span>
+                </div>
+            </div>
+            <img [src]="'assets/img/benigni.jpg'">
+        </span>
+    </div>
+    <div *ngIf="name == 'Edward Norton'">
+        <span>
+            <h1>Edward Norton</h1>
+            <div *ngFor="let actor of actors">
+                <div *ngIf="actor.name == name">
+                    <span><p><strong>Nombre: </strong>{{actor.name}}</p><p><strong>Fecha de nacimiento:</strong> {{actor.birth}}</p><p><strong>Películas:</strong> {{actor.pelis}}</p></span>
+                </div>
+            </div>
+            <img [src]="'assets/img/norton.jpg'">
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Películas</h1>
+    </header>
+    <div *ngFor="let peli of pelis; index as i" id="llistat">
+        <span class="pelis"><a routerLink="/peli/{{peli.titol}}" id="titol">{{peli.titol}}</a><br /><div class="p"><strong>Género:</strong> {{peli.genere}}<br /> 
+            <strong>Fecha de estreno:</strong> {{peli.estrena}}<br /> <strong>Actor principal:</strong><a routerLink="/actor/{{peli.actors}}"> {{peli.actors}}</a><br /></div></span>
+    </div>
+    <div>
+        <img [src]="'assets/img/pulp_fiction.jpg'" id="pulp_fiction" />
+        <img [src]="'assets/img/padrino.jpg'" id="padrino" />
+        <img [src]="'assets/img/vidabella.jpg'" id="vidabella" />
+        <img [src]="'assets/img/clublucha.jpg'" id="clublucha" />
+    </div>
+</body>
+</html>
